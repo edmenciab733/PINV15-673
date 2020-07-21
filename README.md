@@ -1,5 +1,5 @@
 # PINV15-673
-Linked URL: [Colaboratory](https://research.google.com/colaboratory)
+Linked URL: [Colaboratory](https://colab.research.google.com/gist/edmenciab733/ba995dba7b1a940fe25342acea10309c/pinv.ipynb)
 
 #   Funcion de procesamiento de imagenes
 function initMap() {    
