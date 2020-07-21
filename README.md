@@ -1,6 +1,9 @@
 # PINV15-673
 
-function initMap() {
+
+#   Function de procesamiento de imagenes
+function initMap() {    
+    
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
             lat: -26.500121,
