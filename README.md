@@ -1,7 +1,7 @@
 # PINV15-673
 
 
-#   Function de procesamiento de imagenes
+#   Funcion de procesamiento de imagenes
 function initMap() {    
     
     map = new google.maps.Map(document.getElementById('map'), {
