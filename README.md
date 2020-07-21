@@ -73,3 +73,27 @@ $("body").on("click", "img", function() {
     $("#modal_image").modal("show");
 })
 ```
+
+#GeoEtiquetado de imagenes
+```bash
+pip install gpsphoto
+```
+
+```python
+from GPSPhoto import gpsphoto
+#Se agregar una imagen de la carpeta
+files = [".pinv/DSC04160.JPG"]
+for file in files:
+    photo = gpsphoto.GPSPhoto(file)
+     #los parametros de ubicacion se agrega como metadata de la imagen
+    info = gpsphoto.GPSInfo((-26.502982, -55.808099), timeStamp='1970:01:01 09:05:05')
+    photo.modGPSData(info, file)
+    data = gpsphoto.getGPSData(file)
+    for tag in data.keys():
+        print("%s: %s" % (tag, data[tag]))
+        print("-------------------\n")
+
+
+```
+
+
