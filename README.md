@@ -1,5 +1,7 @@
 # PINV15-673
 
+En google colab se encuentra todo el codigo de studio para el procesamiento de imagenes.
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/edmenciab733/ba995dba7b1a940fe25342acea10309c/pinv.ipynb)
 
 
