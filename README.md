@@ -1,5 +1,5 @@
 # PINV15-673
-<script>
+
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
@@ -73,4 +73,4 @@ $('body').on('click', 'img', function() {
     $('#modal_image').modal('show');
 
 })
-</script>
+
