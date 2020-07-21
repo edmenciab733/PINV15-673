@@ -1,15 +1,6 @@
 # PINV15-673
-
+<script>
 function initMap() {
-
-    var locations = [
-        ['Image 1', -26.499699, -55.790628, 4],
-        ['Image 2', -26.499276, -55.790768, 5],
-        ['Image 3', -26.499521, -55.790412, 3],
-        ['Image 4', -26.500206, -55.790105, 2],
-        ['Image 5', -26.499990, -55.791118, 1]
-    ];
-
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
             lat: -26.500121,
@@ -82,3 +73,4 @@ $('body').on('click', 'img', function() {
     $('#modal_image').modal('show');
 
 })
+</script>
