@@ -6,7 +6,7 @@
 #   Funcion de procesamiento de imagenes
 
 - Carga de datos en Google maps
-
+```javascript
 function initMap() {    
     map = new google.maps.Map(document.getElementById("map"), {
         center: {
@@ -58,4 +58,4 @@ $("body").on("click", "img", function() {
     getExif(img1);
     $("#modal_image").modal("show");
 })
-
+```
