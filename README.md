@@ -4,9 +4,17 @@ En google colab se encuentra todo el codigo de studio para el procesamiento de i
 
 El Índice de vegetación de diferencia normalizada, también conocido como NDVI por sus siglas en inglés, es un índice usado para estimar la cantidad, calidad y desarrollo de la vegetación con base a la medición, por medio de sensores remotos instalados comúnmente desde una plataforma espacial, de la intensidad de la radiación de ciertas bandas del espectro electromagnético que la vegetación emite o refleja.
 
+![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/d76fc98a8d6c852f9aa4ea36b947e2134d294a3e)
+
+Ejemplo de satelite LANDSAT 8 
+
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/NDVI_2017-09-10.png/440px-NDVI_2017-09-10.png)
+
 La falta de una camara infraroja nos hizo buscar otras tecnicas para analizar las imagenes, que presentamos abajo en Google Colab
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/edmenciab733/ba995dba7b1a940fe25342acea10309c/pinv.ipynb)
+
+
 
 
 #   Funcion de procesamiento de imagenes
