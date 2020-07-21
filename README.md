@@ -75,6 +75,7 @@ $("body").on("click", "img", function() {
 ```
 
 #GeoEtiquetado de imagenes
+- Instalamo la libreria gpsphoto para manejo de metada de gps
 ```bash
 pip install gpsphoto
 ```
