@@ -4,18 +4,21 @@
 
 
 #   Funcion de procesamiento de imagenes
+
+Carga de datos en Google maps
+
 function initMap() {    
     
-    map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById("map"), {
         center: {
             lat: -26.500121,
             lng: -55.791047
         },
-        mapTypeId: 'satellite',
+        mapTypeId: "satellite",
         zoom: 16
     });
 
-    google.maps.event.addListener(map, 'drag', function() {
+    google.maps.event.addListener(map, "drag", function() {
         marker.setPosition(this.getCenter()); // set marker position to map center
         console.log(this.getCenter().lat(), this.getCenter().lng())
 
@@ -30,9 +33,9 @@ function initMap() {
             map: map
         });
 
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            var content = '<img border="0" width="500" height="600" class="img-fluid" align="Left" src="http://senuelo.net/pinv/DSC04148.JPG"> '
-            content += '<h4>Latitud: ' + marker.getPosition() + '</h4>'
+        google.maps.event.addListener(marker, "click", (function(marker, i) {
+            var content = "<img border="0" width="500" height="600" class="img-fluid" align="Left" src="http://senuelo.net/pinv/DSC04148.JPG"> "
+            content += "<h4>Latitud: " + marker.getPosition() + "</h4>"
             return function() {
                 infowindow.setContent(content);
 
@@ -57,25 +60,21 @@ function getExif(img) {
     });
 }
 
-$('body').on('click', 'img', function() {
-
+$("body").on("click", "img", function() {
 
     var src = $(this).clone()[0].src;
-    var img = $('<img />').attr({
-        'id': 'myImage',
-        'src': src,
+    var img = $("<img />").attr({
+        "id": "myImage",
+        "src": src,
 
-        'class': "img-fluid"
+        "class": "img-fluid"
     });
 
-
-    $('#modal_image .modal-body').empty();
-
-
-    $('#modal_image .modal-body').html(img);
+    $("#modal_image .modal-body").empty();
+    $("#modal_image .modal-body").html(img);
     var img1 = document.getElementById("myImage");
     getExif(img1);
-    $('#modal_image').modal('show');
+    $("#modal_image").modal("show");
 
 })
 
